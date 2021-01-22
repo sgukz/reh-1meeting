@@ -11,6 +11,7 @@ import {
 import axios from "axios";
 import Swal from "sweetalert2";
 import config from "../config";
+import liff from "@line/liff";
 import "./ProfilePage.css";
 import DefaultImg from "../assets/default-image.jpg";
 const jwt = require("jsonwebtoken");
@@ -126,13 +127,34 @@ class ProfilePage extends Component {
         phone: decoded.phone,
       });
     } else {
-      this.props.history.push("/reh-1meeting-app/register");
+      this.props.history.push("/reh-1meeting/register");
     }
   }
+  InitailizeLiff = () => {
+    liff.init(
+      {
+        liffId: "1655384297-BvEewepx",
+      },
+      () => {
+        if (liff.isLoggedIn()) {
+          liff.getProfile().then((profile) => {
+            this.setState({
+              displayName: profile.displayName,
+              urlPicture: profile.pictureUrl
+            })
+          });
+        } else {
+          alert("No login!");
+        }
+      },
+      (err) => console.log(err)
+    );
+  };
   componentDidMount() {
     this.LoadDataUser();
   }
   render() {
+    const { displayName, urlPicture } = this.state;
     return (
       <div>
         <MDBEdgeHeader
@@ -151,7 +173,7 @@ class ProfilePage extends Component {
                   <MDBCardBody>
                     <MDBCol className="text-center">
                       <img
-                        src={this.state.urlPicture}
+                        src={urlPicture}
                         width="150"
                         height="150"
                         alt=""
@@ -160,7 +182,7 @@ class ProfilePage extends Component {
                     </MDBCol>
                     <MDBCol md="12">
                       <h4 className="font-weight-bold mt-2 mb-4 text-center">
-                      {this.state.displayName}
+                      {displayName}
                       </h4>
                       <h5 className="text-primary">ข้อมูลส่วนตัว</h5>
                       <form

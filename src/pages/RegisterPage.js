@@ -41,7 +41,7 @@ const RegisterPage = () => {
             "user",
             JSON.stringify(resp.data.data[0].data_info)
           );
-          history.push("/reh-1meeting-app");
+          history.push("/reh-1meeting/");
         }
       })
       .catch((error) => {
@@ -77,7 +77,7 @@ const RegisterPage = () => {
           text: "กรุณารอสักครู่...",
           icon: "success",
         });
-        history.push("/reh-1meeting-app");
+        history.push("/reh-1meeting/");
       } else if (resp.data.code === 400) {
         Swal.fire({
           title: "แจ้งเตือน",

@@ -1,6 +1,6 @@
 {
-    "name": "reh-1meeting",
-    "version": "1.11.0",
+    "name": "reh-1meeting-new",
+    "version": "1.12.0",
     "private": true,
     "// If You want to install mdbreact from our GitLab repository, please replace '4.27.0' with gitURL provided here ->": "git+https://oauth2:<YOUR-TOKEN-GOES-HERE>@git.mdbootstrap.com/mdb/react/re-pro.git",
     "dependencies": {
@@ -34,5 +34,5 @@
         "not ie <= 11",
         "not op_mini all"
     ],
-    "homepage": "http://sgukz.github.io/reh-1meeting-app/"
+    "homepage": "http://sgukz.github.io/reh-1meeting/"
 }

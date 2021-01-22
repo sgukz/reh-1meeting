@@ -83,7 +83,7 @@ const HomePage = (props) => {
         } else {
           localStorage.removeItem("user");
           localStorage.removeItem("userid");
-          history.push("/reh-1meeting-app/register");
+          history.push("/reh-1meeting/register");
         }
       })
       .catch((error) => {
