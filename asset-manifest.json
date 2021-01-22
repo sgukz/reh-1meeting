@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/reh-1meeting/static/css/main.d827372d.chunk.css",
+    "main.js": "/reh-1meeting/static/js/main.8d070fa4.chunk.js",
+    "main.js.map": "/reh-1meeting/static/js/main.8d070fa4.chunk.js.map",
+    "runtime-main.js": "/reh-1meeting/static/js/runtime-main.af561330.js",
+    "runtime-main.js.map": "/reh-1meeting/static/js/runtime-main.af561330.js.map",
+    "static/css/2.35db4b6c.chunk.css": "/reh-1meeting/static/css/2.35db4b6c.chunk.css",
+    "static/js/2.a649e922.chunk.js": "/reh-1meeting/static/js/2.a649e922.chunk.js",
+    "static/js/2.a649e922.chunk.js.map": "/reh-1meeting/static/js/2.a649e922.chunk.js.map",
+    "index.html": "/reh-1meeting/index.html",
+    "precache-manifest.31409ed6959215cc6e52e8468f70d9e1.js": "/reh-1meeting/precache-manifest.31409ed6959215cc6e52e8468f70d9e1.js",
+    "service-worker.js": "/reh-1meeting/service-worker.js",
+    "static/css/2.35db4b6c.chunk.css.map": "/reh-1meeting/static/css/2.35db4b6c.chunk.css.map",
+    "static/css/main.d827372d.chunk.css.map": "/reh-1meeting/static/css/main.d827372d.chunk.css.map",
+    "static/js/2.a649e922.chunk.js.LICENSE.txt": "/reh-1meeting/static/js/2.a649e922.chunk.js.LICENSE.txt",
+    "static/media/mdb.css": "/reh-1meeting/static/media/arrow_right.8ef6a08c.svg",
+    "static/media/default-image.jpg": "/reh-1meeting/static/media/default-image.440b9b23.jpg",
+    "static/media/all.min.css": "/reh-1meeting/static/media/fa-solid-900.8e1ed89b.woff2"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.af561330.js",
+    "static/css/2.35db4b6c.chunk.css",
+    "static/js/2.a649e922.chunk.js",
+    "static/css/main.d827372d.chunk.css",
+    "static/js/main.8d070fa4.chunk.js"
+  ]
+}
